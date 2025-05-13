@@ -1,0 +1,50 @@
+.login-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(235, 235, 235);
+}
+.login-container{
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0px 6px 20px rgb(63, 63, 63);
+    width: 100%;
+    max-width: 400px;
+    
+h2{
+    text-align: center;
+    color: rgb(33, 75, 201);
+    margin-bottom: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+input{
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid rgb(199, 199, 199);
+}
+button{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 8px;
+    background-color: rgb(33, 75, 201);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#mensajelogin{
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500;
+}

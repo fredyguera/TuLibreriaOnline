@@ -1,4 +1,4 @@
-document.getElementById('login-form') addEventListener('submit', function(e) {
+document.getElementById('login-form').addEventListener('submit', function(e) {
     e.preventDefault();//Evitar que el formulario se envie automaticamente al servidor
 
     const usuario = document.getElementById ('usuario').value; 

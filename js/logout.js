@@ -1,3 +1,3 @@
 function logout(){
-    window
+    window.location.href = "../public/login.html"
 }

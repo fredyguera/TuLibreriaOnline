@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | Productos</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/productos.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Tu Librería Online</div>
+        <ul>
+          <li><a href="dashboard.html">Panel Principal</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="#" onclick="cerrarSesion()">Cerrar Sesión</a></li>
+        </ul>
+        <!-- Con el div y los span crearemos un icono de tipo hamburguesa -->
+        <div class="hamburguesa">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h1>Productos</h1>
+        <div class="contenedor-productos">
+          <div class="producto">
+            <img
+              src="https://tienda.sophosenlinea.com/imagenes/9786070/978607075192.webp"
+              alt=""
+            />
+            <h3>EL TUNEL </h3>
+            <p>Autor: Ernesto Sabato Q. 180</p>
+            <button onclick="agregarAlCarrito(1)">Agregar al carrito</button>
+          </div>
+
+          <div class="producto">
+            <img
+              src="https://m.media-amazon.com/images/I/81n75F2tIdL._AC_UF1000,1000_QL80_.jpg"
+              alt=""
+            />
+            <h3>HIMNO</h3>
+            <p>Autor: Ayn Rand Q. 150</p>
+            <button onclick="agregarAlCarrito(2)">Agregar al carrito</button>
+          </div>
+
+          <div class="producto">
+            <img
+              src="https://tienda.sophosenlinea.com/imagenes/9786073/978607380376.webp"
+              alt=""
+            />
+            <h3>EL PRINCIPITO</h3>
+            <p>Autor: Antoine de Saint Exupery Q. 130</p>
+            <button onclick="agregarAlCarrito(3)">Agregar al carrito</button>
+          </div>
+
+          <div class="producto">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1328046388i/10561321.jpg"
+              alt=""
+            />
+            <h3>EL VIAJE DEL ELEFANTE</h3>
+            <p>Autor: José Saramago Q. 200</p>
+            <button onclick="agregarAlCarrito(4)">Agregar al carrito</button>
+          </div>
+
+          <div class="producto">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg6zn3On64pRBVtmBDnsb1W1AjNCoHs1zdYQ&s"
+              alt=""
+            />
+            <h3>KAFKA EN LA ORILLA</h3>
+            <p>Autor: Haruki Murakami Q. 200</p>
+            <button onclick="agregarAlCarrito(5)">Agregar al carrito</button>
+          </div>
+
+          <div class="producto">
+            <img
+              src="https://lavenamisteriosa.com/wp-content/uploads/2019/11/portada-de-el-retrato-de-dorian-gray-1.jpg"
+              alt=""
+            />
+            <h3>EL RETRATO DE DORIAN GRAY</h3>
+            <p>Autor: Oscar Wilde Q. 180</p>
+            <button onclick="agregarAlCarrito(6)">Agregar al carrito</button>
+          </div>
+
+          <div class="producto">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRANkh1YpjSyqcy7FjMUKnxXJDYPj4FAaE-GA&s"
+              alt=""
+            />
+            <h3>EL GATO NEGRO</h3>
+            <p>Autor: Edgar Allan Poe Q. 150</p>
+            <button onclick="agregarAlCarrito(7)">Agregar al carrito</button>
+          </div>
+
+          <div class="producto">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB00G7OyB7YKl06AfTt0fDqEZ7Wg9OKdwtUw&s"
+              alt=""
+            />
+            <h3>LA REBELION DE ATLAS</h3>
+            <p>Autor: Ayn Rand Q. 380</p>
+            <button onclick="agregarAlCarrito(8)">Agregar al carrito</button>
+          </div>
+
+          <div class="producto">
+            <img
+              src="https://silverlibros.com/wp-content/uploads/2022/02/9789707802971-EL-ALQUIMISTA.jpg"
+              alt=""
+            />
+            <h3>EL ALQUIMISTA</h3>
+            <p>Autor: Paulo Coelho Q. 175</p>
+            <button onclick="agregarAlCarrito(9)">Agregar al carrito</button>
+          </div>
+
+        </div>
+        <div id="carrito">
+            <h2>Carrito de Compras</h2>
+            <ul id="lista-productos"></ul>
+            <p><strong>Total:</strong> <span id="total">0</span></p>
+        </div>
+      </section>
+    </main>
+
+    <script src="../../js/carrito.js"></script>
+    <script src="../../js/script.js"></script>
+    <script src="../../js/logout.js"></script>
+  </body>
+</html>
